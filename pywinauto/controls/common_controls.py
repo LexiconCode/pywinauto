@@ -53,19 +53,19 @@ import warnings
 import locale
 import six
 
-from ..windows import win32functions
-from ..windows import win32defines
-from ..windows import win32structures
-from .. import findbestmatch
-from ..windows.remote_memory_block import RemoteMemoryBlock
+from pywinauto.windows import win32functions
+from pywinauto.windows import win32defines
+from pywinauto.windows import win32structures
+from pywinauto import findbestmatch
+from pywinauto.windows.remote_memory_block import RemoteMemoryBlock
 from . import hwndwrapper
 
-from ..timings import Timings
-from ..timings import wait_until
-from ..timings import TimeoutError
-from ..handleprops import is64bitprocess
-from ..sysinfo import is_x64_Python
-from .. import deprecated
+from pywinauto.timings import Timings
+from pywinauto.timings import wait_until
+from pywinauto.timings import TimeoutError
+from pywinauto.handleprops import is64bitprocess
+from pywinauto.sysinfo import is_x64_Python
+from pywinauto import deprecated
 
 
 # Todo: I should return iterators from things like items() and texts()

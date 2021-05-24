@@ -38,15 +38,15 @@ import six
 from . import uiawrapper
 from . import win32_controls
 from . import common_controls
-from .. import findbestmatch
-from .. import timings
-from ..windows import uia_defines as uia_defs
-from ..windows.uia_defines import IUIA
-from ..windows.uia_defines import NoPatternInterfaceError
-from ..windows.uia_defines import toggle_state_on
-from ..windows.uia_defines import get_elem_interface
-from ..windows.uia_element_info import UIAElementInfo
-from ..windows.uia_element_info import elements_from_uia_array
+from pywinauto import findbestmatch
+from pywinauto import timings
+from pywinauto.windows import uia_defines as uia_defs
+from pywinauto.windows.uia_defines import IUIA
+from pywinauto.windows.uia_defines import NoPatternInterfaceError
+from pywinauto.windows.uia_defines import toggle_state_on
+from pywinauto.windows.uia_defines import get_elem_interface
+from pywinauto.windows.uia_element_info import UIAElementInfo
+from pywinauto.windows.uia_element_info import elements_from_uia_array
 
 
 # ====================================================================

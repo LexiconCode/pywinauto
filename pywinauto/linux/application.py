@@ -37,9 +37,9 @@ import time
 import subprocess
 import shlex
 
-from ..backend import registry
-from ..base_application import AppStartError, ProcessNotFoundError, AppNotConnected, BaseApplication
-from ..timings import Timings  # noqa: E402
+from pywinauto.backend import registry
+from pywinauto.base_application import AppStartError, ProcessNotFoundError, AppNotConnected, BaseApplication
+from pywinauto.timings import Timings  # noqa: E402
 
 
 class Application(BaseApplication):

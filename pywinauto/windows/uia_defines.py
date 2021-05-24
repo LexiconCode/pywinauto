@@ -35,7 +35,7 @@ import comtypes
 import comtypes.client
 import six
 
-from ..backend import Singleton
+from pywinauto.backend import Singleton
 
 
 @six.add_metaclass(Singleton)

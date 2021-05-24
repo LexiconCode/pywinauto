@@ -40,10 +40,10 @@ import six
 
 from . import hwndwrapper
 
-from ..windows import win32defines, win32functions, win32structures
+from pywinauto.windows import win32defines, win32functions, win32structures
 
-from ..timings import Timings
-from .. import deprecated
+from pywinauto.timings import Timings
+from pywinauto import deprecated
 
 #====================================================================
 class ButtonWrapper(hwndwrapper.HwndWrapper):

@@ -2,7 +2,7 @@ import traceback
 
 from abc import abstractmethod
 
-from ..recorder_defines import EVENT, PROPERTY, RecorderMouseEvent, RecorderKeyboardEvent, ApplicationEvent, \
+from pywinauto.recorder.recorder_defines import EVENT, PROPERTY, RecorderMouseEvent, RecorderKeyboardEvent, ApplicationEvent, \
     PropertyEvent, EventPattern, HOOK_MOUSE_LEFT_BUTTON, HOOK_MOUSE_RIGHT_BUTTON, HOOK_MOUSE_MIDDLE_BUTTON, \
     HOOK_KEY_DOWN, get_window_access_name_str, EventHandler
 

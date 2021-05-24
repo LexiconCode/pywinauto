@@ -37,7 +37,7 @@ if sys.platform.startswith('linux'):
     from . import atspi_controls
     from .atspiwrapper import InvalidWindowHandle
 else:
-    from ..sysinfo import UIA_support
+    from pywinauto.sysinfo import UIA_support
     if UIA_support:
         from . import uiawrapper # register "uia" back-end (at the end of uiawrapper module)
         from . import uia_controls
@@ -49,4 +49,4 @@ else:
     from . import common_controls
     from . import win32_controls
 
-from ..base_wrapper import InvalidElement
+from pywinauto.base_wrapper import InvalidElement

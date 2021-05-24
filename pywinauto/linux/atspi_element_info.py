@@ -34,7 +34,7 @@
 
 from .atspi_objects import AtspiAccessible, AtspiComponent, AtspiStateEnum, AtspiAction, AtspiValue, \
     IATSPI
-from ..element_info import ElementInfo
+from pywinauto.element_info import ElementInfo
 
 
 class AtspiElementInfo(ElementInfo):

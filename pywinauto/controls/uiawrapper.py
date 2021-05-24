@@ -39,16 +39,16 @@ import time
 import warnings
 import comtypes
 
-from .. import backend
-from .. import WindowNotFoundError  # noqa #E402
-from ..timings import Timings
+from pywinauto import backend
+from pywinauto import WindowNotFoundError  # noqa #E402
+from pywinauto.timings import Timings
 from .win_base_wrapper import WinBaseWrapper
 from .hwndwrapper import HwndWrapper
-from ..base_wrapper import BaseMeta
+from pywinauto.base_wrapper import BaseMeta
 
-from ..windows.uia_defines import IUIA
-from ..windows import uia_defines as uia_defs
-from ..windows.uia_element_info import UIAElementInfo, elements_from_uia_array
+from pywinauto.windows.uia_defines import IUIA
+from pywinauto.windows import uia_defines as uia_defs
+from pywinauto.windows.uia_element_info import UIAElementInfo, elements_from_uia_array
 
 # =========================================================================
 _friendly_classes = {

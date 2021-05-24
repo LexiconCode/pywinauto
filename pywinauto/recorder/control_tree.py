@@ -1,8 +1,8 @@
 from collections import deque
 
-from .. import findbestmatch
-from ..base_wrapper import BaseWrapper
-from ..element_info import ElementInfo
+from pywinauto import findbestmatch
+from pywinauto.base_wrapper import BaseWrapper
+from pywinauto.element_info import ElementInfo
 
 
 class ControlTreeNode(object):

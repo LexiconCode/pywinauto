@@ -35,13 +35,13 @@ from ctypes import \
     c_int, c_long, c_void_p, c_char, \
     POINTER, sizeof, alignment, Union, c_longlong, c_size_t, wintypes
 
-from ..base_types import Structure
-from ..base_types import StructureMixIn
-from ..base_types import PointIteratorMixin
-from ..base_types import RectExtMixin
-from ..base_types import _reduce
+from pywinauto.base_types import Structure
+from pywinauto.base_types import StructureMixIn
+from pywinauto.base_types import PointIteratorMixin
+from pywinauto.base_types import RectExtMixin
+from pywinauto.base_types import _reduce
 from .win32defines import LF_FACESIZE
-from .. import sysinfo
+from pywinauto import sysinfo
 
 
 #LPTTTOOLINFOW = POINTER(tagTOOLINFOW)

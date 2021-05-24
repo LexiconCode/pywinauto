@@ -3,16 +3,16 @@ import timeit
 
 from comtypes import COMObject, COMError
 
-from ...windows import win32_hooks
-from ...windows.win32structures import POINT
-from ...windows.uia_defines import IUIA, window_visual_state_normal, expand_state_expanded
-from ...windows.uia_element_info import UIAElementInfo
-from ...findbestmatch import ControlNames
+from pywinauto.windows import win32_hooks
+from pywinauto.windows.win32structures import POINT
+from pywinauto.windows.uia_defines import IUIA, window_visual_state_normal, expand_state_expanded
+from pywinauto.windows.uia_element_info import UIAElementInfo
+from pywinauto.findbestmatch import ControlNames
 
-from ..control_tree import ControlTree
-from ..base_recorder import BaseRecorder
-from ..win32_progress_bar import ProgressBarDialog
-from ..recorder_defines import RecorderMouseEvent, RecorderKeyboardEvent, ApplicationEvent, PropertyEvent, EVENT, \
+from pywinauto.recorder.control_tree import ControlTree
+from pywinauto.recorder.base_recorder import BaseRecorder
+from pywinauto.recorder.win32_progress_bar import ProgressBarDialog
+from pywinauto.recorder.recorder_defines import RecorderMouseEvent, RecorderKeyboardEvent, ApplicationEvent, PropertyEvent, EVENT, \
     PROPERTY
 from .uia_event_handlers import UIA_EVENT_PATTERN_MAP
 from .uia_recorder_defines import EVENT_ID_TO_NAME_MAP, PROPERTY_ID_TO_NAME_MAP, STRUCTURE_CHANGE_TYPE_TO_NAME_MAP, \

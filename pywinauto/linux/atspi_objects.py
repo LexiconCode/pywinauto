@@ -39,10 +39,10 @@ from ctypes import c_int, c_bool, c_char_p, c_char, POINTER, c_uint, c_uint32, c
     create_string_buffer, cdll, pointer, c_void_p, CFUNCTYPE
 from functools import wraps
 
-from ..base_types import Structure
-from ..base_types import PointIteratorMixin
-from ..base_types import RectExtMixin
-from ..backend import Singleton
+from pywinauto.base_types import Structure
+from pywinauto.base_types import PointIteratorMixin
+from pywinauto.base_types import RectExtMixin
+from pywinauto.backend import Singleton
 
 
 class CtypesEnum(object):

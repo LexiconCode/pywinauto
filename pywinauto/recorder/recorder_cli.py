@@ -17,7 +17,7 @@ if __package__ is None:
     from pywinauto.recorder.uia.uia_recorder import UiaRecorder
     from pywinauto.recorder.recorder_config import RecorderConfig
 else:
-    from ..application import Application
+    from pywinauto.application import Application
     from .uia.uia_recorder import UiaRecorder
     from .recorder_config import RecorderConfig
 

@@ -45,18 +45,18 @@ import win32gui
 import win32con
 import win32event
 
-from .. import controls
-from .. import findbestmatch
-from .. import findwindows
-from .. import handleprops
+from pywinauto import controls
+from pywinauto import findbestmatch
+from pywinauto import findwindows
+from pywinauto import handleprops
 from . import win32defines
-from ..backend import registry
+from pywinauto.backend import registry
 
-from ..actionlogger import ActionLogger
-from ..timings import Timings, wait_until, TimeoutError, wait_until_passes
-from ..sysinfo import is_x64_Python
-from ..base_application import AppStartError, ProcessNotFoundError, AppNotConnected, BaseApplication
-from .. import deprecated
+from pywinauto.actionlogger import ActionLogger
+from pywinauto.timings import Timings, wait_until, TimeoutError, wait_until_passes
+from pywinauto.sysinfo import is_x64_Python
+from pywinauto.base_application import AppStartError, ProcessNotFoundError, AppNotConnected, BaseApplication
+from pywinauto import deprecated
 
 # Display User and Deprecation warnings every time
 for warning in (UserWarning, PendingDeprecationWarning):

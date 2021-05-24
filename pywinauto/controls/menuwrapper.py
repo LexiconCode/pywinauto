@@ -46,12 +46,12 @@ import locale
 import six
 
 from functools import wraps
-from ..windows import win32defines, win32functions, win32structures
-from .. import findbestmatch
-from .. import mouse
-from ..windows.remote_memory_block import RemoteMemoryBlock
-from ..timings import Timings
-from .. import deprecated
+from pywinauto.windows import win32defines, win32functions, win32structures
+from pywinauto import findbestmatch
+from pywinauto import mouse
+from pywinauto.windows.remote_memory_block import RemoteMemoryBlock
+from pywinauto.timings import Timings
+from pywinauto import deprecated
 
 
 class MenuItemInfo(object):

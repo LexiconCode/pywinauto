@@ -36,11 +36,11 @@ from __future__ import print_function
 
 import six
 
-from .. import backend
-from ..base_wrapper import BaseWrapper
-from ..base_wrapper import BaseMeta
+from pywinauto import backend
+from pywinauto.base_wrapper import BaseWrapper
+from pywinauto.base_wrapper import BaseMeta
 
-from ..linux.atspi_element_info import AtspiElementInfo
+from pywinauto.linux.atspi_element_info import AtspiElementInfo
 
 from Xlib import Xatom
 from Xlib.display import Display

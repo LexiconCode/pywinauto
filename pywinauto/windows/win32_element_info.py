@@ -37,8 +37,8 @@ import win32gui
 
 from . import win32functions
 from . import win32structures
-from .. import handleprops
-from ..element_info import ElementInfo
+from pywinauto import handleprops
+from pywinauto.element_info import ElementInfo
 from .remote_memory_block import RemoteMemoryBlock
 
 

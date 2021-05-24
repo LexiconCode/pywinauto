@@ -71,9 +71,9 @@ import win32con
 import win32gui
 import win32process
 
-from .. import keyboard
+from pywinauto import keyboard
 from .win32defines import VK_PACKET
-from ..actionlogger import ActionLogger
+from pywinauto.actionlogger import ActionLogger
 from . import win32functions
 from .win32structures import KBDLLHOOKSTRUCT
 from .win32structures import MSLLHOOKSTRUCT

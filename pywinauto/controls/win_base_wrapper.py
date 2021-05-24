@@ -43,20 +43,20 @@ import win32api
 import win32con
 import six
 
-from ..windows.win32structures import RECT
+from pywinauto.windows.win32structures import RECT
 
 try:
     from PIL import ImageGrab, Image
 except ImportError:
     ImageGrab = None
 
-from .. import keyboard
-from ..windows import win32defines, win32functions, win32structures
-from ..timings import Timings
-from ..mouse import _perform_click_input
+from pywinauto import keyboard
+from pywinauto.windows import win32defines, win32functions, win32structures
+from pywinauto.timings import Timings
+from pywinauto.mouse import _perform_click_input
 
-from ..base_wrapper import BaseWrapper
-from ..base_wrapper import BaseMeta
+from pywinauto.base_wrapper import BaseWrapper
+from pywinauto.base_wrapper import BaseMeta
 
 
 #=========================================================================

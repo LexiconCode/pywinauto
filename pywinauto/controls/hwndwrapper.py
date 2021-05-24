@@ -53,17 +53,17 @@ import warnings
 # the actions - as such I don't want to require sendkeys - so
 # the following makes the import optional.
 
-from ..windows import win32defines, win32functions, win32structures
-from .. import controlproperties
-from ..actionlogger import ActionLogger
-from .. import keyboard
-from .. import mouse
-from ..timings import Timings
-from .. import timings
-from .. import handleprops
-from ..windows.win32_element_info import HwndElementInfo
-from .. import backend
-from .. import WindowNotFoundError  # noqa #E402
+from pywinauto.windows import win32defines, win32functions, win32structures
+from pywinauto import controlproperties
+from pywinauto.actionlogger import ActionLogger
+from pywinauto import keyboard
+from pywinauto import mouse
+from pywinauto.timings import Timings
+from pywinauto import timings
+from pywinauto import handleprops
+from pywinauto.windows.win32_element_info import HwndElementInfo
+from pywinauto import backend
+from pywinauto import WindowNotFoundError  # noqa #E402
 
 # I leave this optional because PIL is a large dependency
 try:
@@ -76,8 +76,8 @@ except ImportError:
 from .menuwrapper import Menu #, MenuItemNotEnabled
 
 from .win_base_wrapper import WinBaseWrapper
-from ..base_wrapper import BaseMeta
-from .. import deprecated
+from pywinauto.base_wrapper import BaseMeta
+from pywinauto import deprecated
 
 
 #====================================================================
@@ -433,7 +433,7 @@ class HwndWrapper(WinBaseWrapper):
     #    nmhdr.idFrom = self.control_id()
     #    nmhdr.code = code
 
-    #    from ..windows.remote_memory_block import RemoteMemoryBlock
+    #    from pywinauto.windows.remote_memory_block import RemoteMemoryBlock
     #    remote_mem = RemoteMemoryBlock(self, size=ctypes.sizeof(nmhdr))
     #    remote_mem.Write(nmhdr, size=ctypes.sizeof(nmhdr))
 
@@ -1480,7 +1480,7 @@ class DialogWrapper(HwndWrapper):
     def run_tests(self, tests_to_run = None, ref_controls = None):
         """Run the tests on dialog"""
         # the tests package is imported only when running unittests
-        from .. import tests
+        from pywinauto import tests
 
         # get all the controls
         controls = [self] + self.children()
@@ -1507,7 +1507,7 @@ class DialogWrapper(HwndWrapper):
         controls = [self] + self.children()
         props = [ctrl.get_properties() for ctrl in controls]
 
-        from .. import xml_helpers
+        from pywinauto import xml_helpers
         xml_helpers.WriteDialogToFile(filename, props)
     # Non PEP-8 alias
     WriteToXML = deprecated(write_to_xml)

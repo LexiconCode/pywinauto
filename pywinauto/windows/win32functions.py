@@ -45,7 +45,7 @@ from ctypes import c_ubyte
 from ctypes import c_size_t
 
 from . import win32defines, win32structures
-from ..actionlogger import ActionLogger
+from pywinauto.actionlogger import ActionLogger
 
 # Quote: "If you want cached libs without polluting ctypes.cdll or
 # ctypes.windll, just create your own instance such as

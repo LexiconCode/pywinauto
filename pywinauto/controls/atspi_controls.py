@@ -36,10 +36,10 @@ import locale
 import six
 
 from . import atspiwrapper
-from ..linux.atspi_objects import AtspiImage
-from ..linux.atspi_objects import AtspiDocument
-from ..linux.atspi_objects import AtspiText
-from ..linux.atspi_objects import AtspiEditableText
+from pywinauto.linux.atspi_objects import AtspiImage
+from pywinauto.linux.atspi_objects import AtspiDocument
+from pywinauto.linux.atspi_objects import AtspiText
+from pywinauto.linux.atspi_objects import AtspiEditableText
 
 # region PATTERNS
 
