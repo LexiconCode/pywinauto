@@ -37,7 +37,7 @@ class BaseRecorder(object):
         if not app.is_process_running():
             raise TypeError("Application must be already running")
 
-        self.wrapper = app.top_window().wrapper_object()
+        self.wrapper = app.top_window().find()
         self.config = config
 
         # Main recorder thread

@@ -14,10 +14,10 @@ if __package__ is None:
     sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 
     from pywinauto.application import Application
-    from pywinauto.recorder.uia.uia_recorder import UiaRecorder
+    from pywinauto.recorder.uia.uia_subscribe import UiaRecorder
     from pywinauto.recorder.recorder_config import RecorderConfig
 else:
-    from pywinauto.application import Application
+    import pywinauto.application as Application
     from .uia.uia_recorder import UiaRecorder
     from .recorder_config import RecorderConfig
 
