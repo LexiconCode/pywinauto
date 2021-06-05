@@ -63,3 +63,4 @@ target/
 
 # Unit tests screenshots
 __main__.*.jpg
+/.vscode/*
